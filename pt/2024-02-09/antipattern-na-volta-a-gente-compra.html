@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Pacheco | Análises e compreensões gerais sobre desenvolvimento de software a partir de um observador finito.</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Antipattern: Na volta a gente compra | Innervision</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Antipattern: Na volta a gente compra" />
+<meta property="og:locale" content="pt" />
+<meta name="description" content="Afinal de contas, o que isso tem a ver com planejamentos em geral e/ou desenvolvimento de software?" />
+<meta property="og:description" content="Afinal de contas, o que isso tem a ver com planejamentos em geral e/ou desenvolvimento de software?" />
+<link rel="canonical" href="https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra" />
+<meta property="og:url" content="https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra" />
+<meta property="og:site_name" content="Innervision" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-02-09T14:50:00-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Antipattern: Na volta a gente compra" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-09T14:50:00-03:00","datePublished":"2024-02-09T14:50:00-03:00","description":"Afinal de contas, o que isso tem a ver com planejamentos em geral e/ou desenvolvimento de software?","headline":"Antipattern: Na volta a gente compra","mainEntityOfPage":{"@type":"WebPage","@id":"https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra"},"url":"https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/pt/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/pt/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/pt/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/pt/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://ricardopacheco.github.io/pt/feed.xml" title="Innervision" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/pt/">
+      <h2 class="nav-title">Innervision</h2>
+    </a>
+    <ul>
+      <li><a href="/pt/about">Sobre</a></li>
+      <li><a href="/pt/tags">Tags</a></li>
+
+      
+        <li>
+          
+          
+          
+            <a class="active" href="/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back">
+              <span class="fi fi-us"></span>
+            </a>
+          
+          
+           
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    
+      <br>
+      <time datetime="2024-02-09 14:50:00 -0300">09/02/2024</time>
+    
+  </div>
+
+  <h1 class="post-title">Antipattern: Na volta a gente compra</h1>
+  <div class="post-line"></div>
+
+  <p>Afinal de contas, o que isso tem a ver com planejamentos em geral e/ou desenvolvimento de software?</p>
+
+<blockquote>
+  <p>Esse antipattern é associado a um comportamento comum vivido por muitos de nós quando crianças, quando víamos algo que desejavamos, porém, nossas mães por impossibilidade ou falta de desejo de nos premiar, nos ludibriávamos com a célebre frase “na volta a gente compra” (Isso no brasil, em seu país onde ser outra expressão mas o comportamento parece ser universal). Mesmo na vida adulta, observei que isso é bastante ativado quando uma pessoa ou equipe, em um prazo muito curto (devido a questões contratuais por exemplo), resolve implementar rapidamente um recurso, negligenciando boas práticas e inviabilizando a sustentabilidade a longo prazo, de forma que inexoravelmente cria <a href="https://en.wikipedia.org/wiki/Technical_debt">dívidas técnicas</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+</blockquote>
+
+<p>Mesmo parecendo obviamente lógico após uma análise racional simples, a quantidade de vezes que isso acontece em empresas (principalmente startups devido ao baixo orçamento) chega a ser surreal. Ao longo dos meus 15 anos como engenheiro de software, vi isso acontecer com mais frequência do que chuva no sertão. Vi na prática e ouvi em relatos não só de engenheiros de software, mas, de outras profissões (inclusive não relacionadas a TI ou exatas) como algo tão simples … e, acredito que devido a essa simplicidade, chegamos a não dar a importância devida. Mas, anotem essa regra geral:</p>
+
+<blockquote>
+  <p>Dívidas técnicas tem juros compostos.</p>
+</blockquote>
+
+<p>A ideia é “faz algo aí e vê o que acontece”, que é um verdadeiro tiro no escuro, mesmo sendo arriscadíssima é plenamente utilizada, como um efeito colateral do péssimo planejamento em geral. Falarei sobre esses planejamentos ao longo do tempo por aqui, e, há várias razões para tal, porém, esse antipattern é responsável IMHO<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> por muitos projetos, após alguns anos, terem que ser jogados no lixo e serem refeitos do zero, porque, todos esquecem na natureza das dívidas técnicas. Na minha visão, uma dívida técnica se comporta exatamente igual ao uso de cartão de crédito, só variando a taxa no caso.</p>
+
+<p>Jogando futebol em um PS3 com um amigo e conversando sobre desenvolvimento de software, no mesmo momento em que falávamos sobre as péssimas práticas que algumas startups usam no seu dia a dia, em um timming perfeito, associamos ao comportamento materno citado. O que de fato me faz colocar isso como um antipattern é a simplicidade e a profundidade do problema. E aqui vem a pegadinha:</p>
+
+<blockquote>
+  <p>Deus, eu, você e nosso inconsciente sabemos que, “na volta a gente” é um eufenismo para nunca. E, assim quando criança, mesmo sem querer costumamos cair nessa parábola, até sentir o gosto amargo dos juros compostos em nossa vida.</p>
+</blockquote>
+
+<p>Frases que identificam que você ou seu time podem estar usando esse antipattern:</p>
+
+<ul>
+  <li>Uso excessivo de “feito é melhor do que bem feito”. Isso é verdade e é uma boa prática, porém, desde que seja em CNTP<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. Vicie nisso e veja como a qualidade e estratégia morrem rapidamente.</li>
+  <li>“Na próximo planejamento veremos isso”. Exatamente igual a frase “bota pra gerar que depois a gente resolve” proferida pelo grande <a href="https://pt.wikipedia.org/wiki/Silvio_Luiz">Silvio Luiz</a>, um dos maiores narradores esportivos brasileiros de todos os tempos. Antipattern ativado, o depois virou nunca.</li>
+  <li>“Não é prioridade agora”<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>, e, conforme o antipattern nos ensina, nunca será. Preguiçosos adoram essa frase, pois, jogam a bomba pro seu eu do futuro ou outra pessoa quando estourar.</li>
+</ul>
+
+<p>Até o chatgpt parece concordar comigo (rs):</p>
+
+<p><img src="/assets/images/pt/chatgpt-about-antipattern.png" alt="Chatgtp about antipatterns" /></p>
+
+<p>O pattern correto é <strong>SEMPRE</strong> primeiramente entender a essência do problema: Nesse caso, as constantes e inevitáveis mudanças do mercado. Entendido isso, e, sabendo da impossibilidade de resolver a mudança, nos adaptamos a ela: Com um pouco de bom senso e usando analogia da boa educação financeira concluímos que é apenas agendar uma correção ou reajuste <strong>em tempo hábil</strong>. Ao não fazer isso o antipattern é ativado e se materiza negativando o bolso do responsável cobrando juros compostos.</p>
+
+<hr />
+
+<h2 id="referências-e-citações">Referências e citações</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>O termo vem de uma metáfora inspirada no conceito de dívida existente na área de finanças e negócios, aplicada ao campo de software. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>IMHO: “In My Humble Opinion” (Em minha humilde opinião). <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>CNTP: Condições normais de temperatura e pressão. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>“Porque existem muitos que são descuidados consigo mesmo. E os descuidos nunca dão bons resultados: o que é preciso ser feito hoje não se deve deixar para amanhã” (Racional Superior em Universo em Desencanto: 162H) <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+  <!-- Start disqus -->
+<script src="/pt/assets/js/disqusLoader.js" /></script>
+<div id="disqus_thread"><h3>Discussion and feedback</h3></div>
+<div class="disqus"></div>
+<script>
+    disqusLoader('.disqus', {
+        scriptUrl: 'https://innervision-1.disqus.com/embed.js'
+    });
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- End disqus -->
+
+
+
+<div class="pagination">
+  
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2024-02-09 18:27:33 -0300">2024</time>
+  </span>
+</footer>
+
+  </body>
+</html>

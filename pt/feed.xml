@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://ricardopacheco.github.io/pt/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ricardopacheco.github.io/pt/" rel="alternate" type="text/html" hreflang="pt" /><updated>2024-02-09T18:27:33-03:00</updated><id>https://ricardopacheco.github.io/pt/feed.xml</id><title type="html">Innervision</title><subtitle>Analysis and general understanding about software development from a finite observer.</subtitle><entry><title type="html">Antipattern: Na volta a gente compra</title><link href="https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra" rel="alternate" type="text/html" title="Antipattern: Na volta a gente compra" /><published>2024-02-09T14:50:00-03:00</published><updated>2024-02-09T14:50:00-03:00</updated><id>https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra</id><content type="html" xml:base="https://ricardopacheco.github.io/pt/2024-02-09/antipattern-na-volta-a-gente-compra">&lt;p&gt;Afinal de contas, o que isso tem a ver com planejamentos em geral e/ou desenvolvimento de software?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Esse antipattern é associado a um comportamento comum vivido por muitos de nós quando crianças, quando víamos algo que desejavamos, porém, nossas mães por impossibilidade ou falta de desejo de nos premiar, nos ludibriávamos com a célebre frase “na volta a gente compra” (Isso no brasil, em seu país onde ser outra expressão mas o comportamento parece ser universal). Mesmo na vida adulta, observei que isso é bastante ativado quando uma pessoa ou equipe, em um prazo muito curto (devido a questões contratuais por exemplo), resolve implementar rapidamente um recurso, negligenciando boas práticas e inviabilizando a sustentabilidade a longo prazo, de forma que inexoravelmente cria &lt;a href=&quot;https://en.wikipedia.org/wiki/Technical_debt&quot;&gt;dívidas técnicas&lt;/a&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mesmo parecendo obviamente lógico após uma análise racional simples, a quantidade de vezes que isso acontece em empresas (principalmente startups devido ao baixo orçamento) chega a ser surreal. Ao longo dos meus 15 anos como engenheiro de software, vi isso acontecer com mais frequência do que chuva no sertão. Vi na prática e ouvi em relatos não só de engenheiros de software, mas, de outras profissões (inclusive não relacionadas a TI ou exatas) como algo tão simples … e, acredito que devido a essa simplicidade, chegamos a não dar a importância devida. Mas, anotem essa regra geral:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dívidas técnicas tem juros compostos.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A ideia é “faz algo aí e vê o que acontece”, que é um verdadeiro tiro no escuro, mesmo sendo arriscadíssima é plenamente utilizada, como um efeito colateral do péssimo planejamento em geral. Falarei sobre esses planejamentos ao longo do tempo por aqui, e, há várias razões para tal, porém, esse antipattern é responsável IMHO&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; por muitos projetos, após alguns anos, terem que ser jogados no lixo e serem refeitos do zero, porque, todos esquecem na natureza das dívidas técnicas. Na minha visão, uma dívida técnica se comporta exatamente igual ao uso de cartão de crédito, só variando a taxa no caso.&lt;/p&gt;
+
+&lt;p&gt;Jogando futebol em um PS3 com um amigo e conversando sobre desenvolvimento de software, no mesmo momento em que falávamos sobre as péssimas práticas que algumas startups usam no seu dia a dia, em um timming perfeito, associamos ao comportamento materno citado. O que de fato me faz colocar isso como um antipattern é a simplicidade e a profundidade do problema. E aqui vem a pegadinha:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Deus, eu, você e nosso inconsciente sabemos que, “na volta a gente” é um eufenismo para nunca. E, assim quando criança, mesmo sem querer costumamos cair nessa parábola, até sentir o gosto amargo dos juros compostos em nossa vida.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Frases que identificam que você ou seu time podem estar usando esse antipattern:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Uso excessivo de “feito é melhor do que bem feito”. Isso é verdade e é uma boa prática, porém, desde que seja em CNTP&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Vicie nisso e veja como a qualidade e estratégia morrem rapidamente.&lt;/li&gt;
+  &lt;li&gt;“Na próximo planejamento veremos isso”. Exatamente igual a frase “bota pra gerar que depois a gente resolve” proferida pelo grande &lt;a href=&quot;https://pt.wikipedia.org/wiki/Silvio_Luiz&quot;&gt;Silvio Luiz&lt;/a&gt;, um dos maiores narradores esportivos brasileiros de todos os tempos. Antipattern ativado, o depois virou nunca.&lt;/li&gt;
+  &lt;li&gt;“Não é prioridade agora”&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, e, conforme o antipattern nos ensina, nunca será. Preguiçosos adoram essa frase, pois, jogam a bomba pro seu eu do futuro ou outra pessoa quando estourar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Até o chatgpt parece concordar comigo (rs):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pt/chatgpt-about-antipattern.png&quot; alt=&quot;Chatgtp about antipatterns&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O pattern correto é &lt;strong&gt;SEMPRE&lt;/strong&gt; primeiramente entender a essência do problema: Nesse caso, as constantes e inevitáveis mudanças do mercado. Entendido isso, e, sabendo da impossibilidade de resolver a mudança, nos adaptamos a ela: Com um pouco de bom senso e usando analogia da boa educação financeira concluímos que é apenas agendar uma correção ou reajuste &lt;strong&gt;em tempo hábil&lt;/strong&gt;. Ao não fazer isso o antipattern é ativado e se materiza negativando o bolso do responsável cobrando juros compostos.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;referências-e-citações&quot;&gt;Referências e citações&lt;/h2&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;O termo vem de uma metáfora inspirada no conceito de dívida existente na área de finanças e negócios, aplicada ao campo de software. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;IMHO: “In My Humble Opinion” (Em minha humilde opinião). &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;CNTP: Condições normais de temperatura e pressão. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;“Porque existem muitos que são descuidados consigo mesmo. E os descuidos nunca dão bons resultados: o que é preciso ser feito hoje não se deve deixar para amanhã” (Racional Superior em Universo em Desencanto: 162H) &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="posts" /><category term="AntiPattern" /><category term="Principle" /><category term="Humor" /><summary type="html">Afinal de contas, o que isso tem a ver com planejamentos em geral e/ou desenvolvimento de software?</summary></entry></feed>

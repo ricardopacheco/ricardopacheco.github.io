@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Pacheco | Analysis and general understanding about software development from a finite observer.</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Antipattern: We’ll buy it when we come back | Innervision</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Antipattern: We’ll buy it when we come back" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="After all, what does this have to do with planning in general and/or software development?" />
+<meta property="og:description" content="After all, what does this have to do with planning in general and/or software development?" />
+<link rel="canonical" href="https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back" />
+<meta property="og:url" content="https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back" />
+<meta property="og:site_name" content="Innervision" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-02-09T14:50:00-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Antipattern: We’ll buy it when we come back" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-09T14:50:00-03:00","datePublished":"2024-02-09T14:50:00-03:00","description":"After all, what does this have to do with planning in general and/or software development?","headline":"Antipattern: We’ll buy it when we come back","mainEntityOfPage":{"@type":"WebPage","@id":"https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back"},"url":"https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://ricardopacheco.github.io/feed.xml" title="Innervision" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Innervision</h2>
+    </a>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/tags">Tags</a></li>
+
+      
+        <li>
+          
+           
+          
+          
+            <a class="active" href="/pt/2024-02-09/antipattern-na-volta-a-gente-compra">
+              <span class="fi fi-br"></span>
+            </a>
+          
+          
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    
+      <br>
+      <time datetime="2024-02-09 14:50:00 -0300">February 09, 2024</time>
+    
+  </div>
+
+  <h1 class="post-title">Antipattern: We'll buy it when we come back</h1>
+  <div class="post-line"></div>
+
+  <p>After all, what does this have to do with planning in general and/or software development?</p>
+
+<blockquote>
+  <p>This antipattern is associated with a common behavior experienced by many of us as children when we saw something we desired, but our mothers, due to impossibility or lack of desire to reward us, would deceive us with the famous phrase “We’ll buy it when we come back” (This in Brazil, in your country, there might be another expression, but the behavior seems to be universal.) Even in adulthood, I observed that this is often triggered when an individual or a team, within a very short timeframe (due to contractual issues, for example), decides to quickly implement a feature, neglecting best practices and jeopardizing long-term sustainability. Inevitably, this creates <a href="https://en.wikipedia.org/wiki/Technical_debt">technical debts</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+</blockquote>
+
+<p>Even though it may seem obviously logical after a simple rational analysis, the number of times this occurs in companies (especially startups due to limited budgets) is surreal. Throughout my 15 years as a software engineer, I’ve seen this happen more frequently than rain in the arid hinterlands. I’ve witnessed it firsthand and heard accounts not only from software engineers but also from professionals in other fields (even those unrelated to IT or exact sciences) as something so simple… and, I believe, due to its simplicity, we sometimes fail to give it the importance it deserves. But mark my words, remember this general rule:</p>
+
+<blockquote>
+  <p>Technical debts have compound interest.</p>
+</blockquote>
+
+<p>The idea is “do something and see what happens,” which is a real shot in the dark. Even though it’s very risky, it’s widely used as a side effect of poor overall planning. I’ll talk about these plans over time here, and there are various reasons for it. However, IMHO<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> this antipattern is responsible for many projects, after a few years, having to be thrown away and redone from scratch because everyone forgets the nature of technical debts. In my view, technical debt behaves exactly like using a credit card, only the interest rate varies in this case.</p>
+
+<p>Playing soccer on a PS3 with a friend and chatting about software development, at the same moment we were discussing the poor practices that some startups use in their daily routines, with perfect timing, we linked it to the mentioned maternal behavior. What actually makes me label this as an antipattern is the simplicity and depth of the problem. And here’s the catch:</p>
+
+<blockquote>
+  <p>God, I, you, and our subconscious know that “we’ll do it later” is a euphemism for never. And just like when we were children, unintentionally, we tend to fall into this parable until we taste the bitter flavor of compound interest in our lives.</p>
+</blockquote>
+
+<p>Phrases that indicate you or your team might be using this antipattern:</p>
+
+<ul>
+  <li>Excessive use of “done is better than perfect.” It’s true and a good practice, but only if it’s in the right context<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. Get hooked on it, and watch how quickly quality and strategy die off.</li>
+  <li>“In the next planning, we’ll see about that.” Exactly like the phrase “just generate it, and we’ll figure it out later” uttered by the great <a href="https://pt.wikipedia.org/wiki/Silvio_Luiz">Silvio Luiz</a>, one of the greatest Brazilian sports announcers of all time. Antipattern activated, ‘later’ turned into ‘never.’</li>
+  <li>“It’s not a priority right now”<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>, and as the antipattern teaches us, it never will be. Lazy folks love this phrase because they pass the bomb to their future selves or someone else when it blows up.</li>
+</ul>
+
+<p>Even ChatGPT seems to agree with me (lol):</p>
+
+<p><img src="/assets/images/en/chatgpt-about-antipattern.png" alt="Chatgtp about antipatterns" /></p>
+
+<p>The correct pattern is <strong>ALWAYS</strong> to first understand the essence of the problem: In this case, the constant and inevitable changes in the market. Once that’s understood, and knowing the impossibility of stopping the change, we adapt to it: With a bit of common sense and using the analogy of good financial education, we conclude that it’s just scheduling a correction or adjustment in a <strong>timely manner</strong>. By not doing this, the antipattern is activated and materializes, negatively impacting the pocket of the person responsible by charging compound interest.</p>
+
+<hr />
+
+<h2 id="references-and-citations">References and citations.</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>The term comes from a metaphor inspired by the concept of debt in the finance and business field, applied to the software domain. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>IMHO: “In My Humble Opinion”. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>NTP: Normal temperature and pressure. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>“Because there are many who are careless with themselves. And carelessness never yields good results: what needs to be done today should not be postponed until tomorrow.” (Superior Rational in “Universe in Disenchantment: 162H”) <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+  <!-- Start disqus -->
+<script src="/assets/js/disqusLoader.js" /></script>
+<div id="disqus_thread"><h3>Discussion and feedback</h3></div>
+<div class="disqus"></div>
+<script>
+    disqusLoader('.disqus', {
+        scriptUrl: 'https://innervision-1.disqus.com/embed.js'
+    });
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- End disqus -->
+
+
+
+<div class="pagination">
+  
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2024-02-09 18:27:33 -0300">2024</time>
+  </span>
+</footer>
+
+  </body>
+</html>

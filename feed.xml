@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://ricardopacheco.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ricardopacheco.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-09T18:27:33-03:00</updated><id>https://ricardopacheco.github.io/feed.xml</id><title type="html">Innervision</title><subtitle>Analysis and general understanding about software development from a finite observer.</subtitle><entry><title type="html">Antipattern: We’ll buy it when we come back</title><link href="https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back" rel="alternate" type="text/html" title="Antipattern: We’ll buy it when we come back" /><published>2024-02-09T14:50:00-03:00</published><updated>2024-02-09T14:50:00-03:00</updated><id>https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back</id><content type="html" xml:base="https://ricardopacheco.github.io/2024-02-09/antipattern-we-ll-buy-it-when-we-come-back">&lt;p&gt;After all, what does this have to do with planning in general and/or software development?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This antipattern is associated with a common behavior experienced by many of us as children when we saw something we desired, but our mothers, due to impossibility or lack of desire to reward us, would deceive us with the famous phrase “We’ll buy it when we come back” (This in Brazil, in your country, there might be another expression, but the behavior seems to be universal.) Even in adulthood, I observed that this is often triggered when an individual or a team, within a very short timeframe (due to contractual issues, for example), decides to quickly implement a feature, neglecting best practices and jeopardizing long-term sustainability. Inevitably, this creates &lt;a href=&quot;https://en.wikipedia.org/wiki/Technical_debt&quot;&gt;technical debts&lt;/a&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Even though it may seem obviously logical after a simple rational analysis, the number of times this occurs in companies (especially startups due to limited budgets) is surreal. Throughout my 15 years as a software engineer, I’ve seen this happen more frequently than rain in the arid hinterlands. I’ve witnessed it firsthand and heard accounts not only from software engineers but also from professionals in other fields (even those unrelated to IT or exact sciences) as something so simple… and, I believe, due to its simplicity, we sometimes fail to give it the importance it deserves. But mark my words, remember this general rule:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Technical debts have compound interest.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The idea is “do something and see what happens,” which is a real shot in the dark. Even though it’s very risky, it’s widely used as a side effect of poor overall planning. I’ll talk about these plans over time here, and there are various reasons for it. However, IMHO&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; this antipattern is responsible for many projects, after a few years, having to be thrown away and redone from scratch because everyone forgets the nature of technical debts. In my view, technical debt behaves exactly like using a credit card, only the interest rate varies in this case.&lt;/p&gt;
+
+&lt;p&gt;Playing soccer on a PS3 with a friend and chatting about software development, at the same moment we were discussing the poor practices that some startups use in their daily routines, with perfect timing, we linked it to the mentioned maternal behavior. What actually makes me label this as an antipattern is the simplicity and depth of the problem. And here’s the catch:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;God, I, you, and our subconscious know that “we’ll do it later” is a euphemism for never. And just like when we were children, unintentionally, we tend to fall into this parable until we taste the bitter flavor of compound interest in our lives.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Phrases that indicate you or your team might be using this antipattern:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Excessive use of “done is better than perfect.” It’s true and a good practice, but only if it’s in the right context&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Get hooked on it, and watch how quickly quality and strategy die off.&lt;/li&gt;
+  &lt;li&gt;“In the next planning, we’ll see about that.” Exactly like the phrase “just generate it, and we’ll figure it out later” uttered by the great &lt;a href=&quot;https://pt.wikipedia.org/wiki/Silvio_Luiz&quot;&gt;Silvio Luiz&lt;/a&gt;, one of the greatest Brazilian sports announcers of all time. Antipattern activated, ‘later’ turned into ‘never.’&lt;/li&gt;
+  &lt;li&gt;“It’s not a priority right now”&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, and as the antipattern teaches us, it never will be. Lazy folks love this phrase because they pass the bomb to their future selves or someone else when it blows up.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Even ChatGPT seems to agree with me (lol):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/en/chatgpt-about-antipattern.png&quot; alt=&quot;Chatgtp about antipatterns&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The correct pattern is &lt;strong&gt;ALWAYS&lt;/strong&gt; to first understand the essence of the problem: In this case, the constant and inevitable changes in the market. Once that’s understood, and knowing the impossibility of stopping the change, we adapt to it: With a bit of common sense and using the analogy of good financial education, we conclude that it’s just scheduling a correction or adjustment in a &lt;strong&gt;timely manner&lt;/strong&gt;. By not doing this, the antipattern is activated and materializes, negatively impacting the pocket of the person responsible by charging compound interest.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references-and-citations&quot;&gt;References and citations.&lt;/h2&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;The term comes from a metaphor inspired by the concept of debt in the finance and business field, applied to the software domain. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;IMHO: “In My Humble Opinion”. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;NTP: Normal temperature and pressure. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;“Because there are many who are careless with themselves. And carelessness never yields good results: what needs to be done today should not be postponed until tomorrow.” (Superior Rational in “Universe in Disenchantment: 162H”) &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="posts" /><category term="AntiPattern" /><category term="Principle" /><category term="Humor" /><summary type="html">After all, what does this have to do with planning in general and/or software development?</summary></entry></feed>
